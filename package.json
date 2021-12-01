@@ -26,8 +26,8 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@redocly/openapi-cli": "^1.0.0-beta.29",
-    "@redocly/openapi-core": "^1.0.0-beta.29"
+    "@redocly/openapi-cli": "^1.0.0-beta.64",
+    "@redocly/openapi-core": "^1.0.0-beta.64"
   },
   "devDependencies": {
     "@types/babel__parser": "^7.1.1",

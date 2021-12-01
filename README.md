@@ -1,10 +1,11 @@
 # Redocly OpenAPI Lint Action
 
 This actions uses [redocly/openapi-cli](https://github.com/Redocly/openapi-cli) to lint OpenAPI documents in a repository.
+It now supports OAS 3.1.
 
 ## Usage
 
-See [action.yml](https://github.com/xuorig/redocly-cli-lint-action/blob/main/action.yml).
+See [action.yml](https://github.com/mattpage/redocly-cli-lint-action/blob/main/action.yml).
 
 ```yaml
 name: OpenAPI Lint
@@ -21,7 +22,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Run Redocly Lint
-      - uses: xuorig/redocly-cli-lint-action@v0.0.1
+      - uses: mattpage/redocly-cli-lint-action@v0.0.1
         with:
           entrypoints: 'documents/openapi.yaml'
           config: '.redocly.yml'

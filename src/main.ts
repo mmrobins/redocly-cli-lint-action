@@ -1,15 +1,19 @@
 import { performance } from 'perf_hooks';
 import { info, setFailed, getInput } from '@actions/core';
-import { loadConfig, Config, lint, formatProblems } from '@redocly/openapi-core';
+import {
+  Config,
+  Totals,
+  formatProblems,
+  getTotals,
+  lint,
+  loadConfig,
+} from '@redocly/openapi-core';
 
 import {
   getExecutionTime,
   getFallbackEntryPointsOrExit,
-  getTotals,
   printLintTotals,
-} from '@redocly/openapi-cli/lib/utils';
-
-import { Totals } from '@redocly/openapi-cli/lib/types';
+} from '@redocly/cli/lib/utils';
 
 type ErrorFormat = "codeframe" | "stylish" | "json" | undefined;
 
